@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="spinPremia.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spin by oxxo testing</title>
+    </head>
+    <body>
+        <form id="myForm">
+
+            <div id="questionFrecuenciaOxxo">
+                <label for="frecuenciaOxxo"
+                    >¿Con que frecuencia sueles ir a la tienda OXXO
+                    aproximadamente?</label
+                >
+                <select name="frecuencia" id="frecuencia">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Todos los días">Todos los días</option>
+                    <option value="Al menos una vez a la semana">Al menos una vez a la semana</option>
+                    <option value="Al menos una vez a la quincena">
+                        Al menos una vez a la quincena
+                    </option>
+                    <option value="Al menos una vez al mes">Al menos una vez al mes</option>
+                    <option value="No suelo ir al OXXO">No suelo ir al OXXO</option>
+                </select>
+            </div>
+
+            <div id="questionMontoPromedio" style="display: none">
+                <label for="montoPromedio"
+                    >Aproximadamente ¿cuánto es el monto promedio de tu ticket
+                    de compra en OXXO?</label
+                >
+                <select name="monto" id="monto">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Menos de $50 pesos">Menos de $50 pesos</option>
+                    <option value="De $51 a $100 pesos">De $51 a $100 pesos</option>
+                    <option value="De $101 a $200 pesos">De $101 a $200 pesos</option>
+                    <option value="De $201 a $400 pesos">De $201 a $400 pesos</option>
+                    <option value="Más de $401 pesos">Más de $401 pesos</option>
+                </select>
+            </div>
+
+            <div id="questionCajero" style="display: none">
+                <label for="acumularPuntos"
+                    >Nuestros cajeros en la tienda te han mencionado que puedes acumular puntos con tu tarjeta, app o celular al momento de pagar? </label
+                >
+                <select name="acumularPuntos" id="acumularPuntos">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div id="questionConocerPremia" style="display: none">
+                <label for="conocesPremia">¿Conoces Spin PREMIA?</label>
+                <select name="conocesPremia" id="conocesPremia">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div id="questionComoConocesPremia" style="display: none">
+                <label for="comoConocesPremia"
+                    >¿Cómo conociste Spin PREMIA? (elige una opción)</label
+                >
+                <select name="comoConocesPremia" id="comoConocesPremia">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="En la app de Spin by OXXO">En la app de Spin by OXXO</option>
+                    <option value="Por un amigo, familiar y/o conocido">
+                        Por un amigo, familiar y/o conocido
+                    </option>
+                    <option value="Publicidad">Publicidad</option>
+                    <option value="En la tienda OXXO">En la tienda OXXO</option>
+                    <option value="Redes sociales">Redes sociales</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <div id="questionBeneficiosPremia" style="display: none">
+                <label for="beneficiosPremia"
+                    >¿Cuáles son los beneficios que conoces del programa Spin
+                    PREMIA? (elige hasta 2 opciones)
+                </label>
+                <select multiple name="beneficiosPremia" id="beneficiosPremia">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Otorga puntos en cada compra en tiendas OXXO">
+                        Otorga puntos en cada compra en tiendas OXXO
+                    </option>
+                    <option value="Da descuentos del 50% pagando con Spin by OXXO">
+                        Da descuentos del 50% pagando con Spin by OXXO
+                    </option>
+                    <option value="Da puntos dobles comprando con Spin by OXXO">
+                        Da puntos dobles comprando con Spin by OXXO
+                    </option>
+                    <option value="Hace 2x1 comprando en OXXO">Hace 2x1 comprando en OXXO</option>
+                    <option value="Da producto gratis al acumular sellos">
+                        Da producto gratis al acumular sellos
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionMediosPremia" style="display: none">
+                <label for="mediosPremia"
+                    >Spin Premia llegó para premiar tu esfuerzo con puntos y
+                    beneficios especialmente para ti con productos de regalo que
+                    puedes hacer válidos con cualquiera de las marcas aliadas.
+                    Sólo usa tu tarjeta física, tarjeta digital o número de
+                    celular ¿A través de qué medios es probable que hubieras
+                    conocido Spin PREMIA? (elige una opción)</label
+                >
+                <select name="mediosPremia" id="mediosPremia">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="En la app de Spin by OXXO">En la app de Spin by OXXO</option>
+                    <option value="Por un amigo, familiar y/o conocido">
+                        Por un amigo, familiar y/o conocido
+                    </option>
+                    <option value="Publicidad">Publicidad</option>
+                    <option value="En la tienda OXXO">En la tienda OXXO</option>
+                    <option value="Redes sociales">Redes sociales</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <div id="questionFormaAcumularPuntos" style="display: none">
+                <label for="formaAcumularPuntos"
+                    >¿Cuál crees que sería la forma ideal para acumular puntos? (elige una opción)
+                </label>
+                <select name="formaAcumularPuntos" id="formaAcumularPuntos">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Escaneando mi tarjeta Spin by OXXO o el código en la app
+                    Spin by OXXO">
+                        Escaneando mi tarjeta Spin by OXXO o el código en la app
+                        Spin by OXXO
+                    </option>
+                    <option value="Escaneando mi tarjeta Spin PREMIA o el código en la app
+                    Spin PREMIA">
+                        Escaneando mi tarjeta Spin PREMIA o el código en la app
+                        Spin PREMIA
+                    </option>
+                    <option value="Escaneando el código en la app Mi OXXO">
+                        Escaneando el código en la app Mi OXXO
+                    </option>
+                    <option value="Dictando mi número de celular al cajero">
+                        Dictando mi número de celular al cajero
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionFormaRedimirPuntos" style="display: none">
+                <label for="formaRedimirPuntos"
+                    >¿Cuál sería la forma ideal para redimir puntos Spin PREMIA? (elige una opción)
+                </label>
+                <select name="formaRedimirPuntos" id="formaRedimirPuntos">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Escaneando mi tarjeta Spin by OXXO o el código que aparece en la app Spin by OXXO">
+                        Escaneando mi tarjeta Spin by OXXO o el código que aparece en la app Spin by OXXO 
+                    </option>
+                    <option value="Escaneando mi tarjeta Spin PREMIA o el código en la app Spin PREMIA">
+                        Escaneando mi tarjeta Spin PREMIA o el código en la app Spin PREMIA 
+                    </option>
+                    <option value="Escaneando el código en la app Mi OXXO">
+                        Escaneando el código en la app Mi OXXO 
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionMotivarPremia" style="display: none">
+                <label for="motivarPremia"
+                    >¿Cuál de estos beneficios te motivarían a usar el programa de Spin PREMIA? (elige una opción)
+                </label>
+                <select name="motivarPremia" id="motivarPremia">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="pObtener el doble de puntos Spin PREMIA pagando con Spin by OXXO">
+                        Obtener el doble de puntos Spin PREMIA pagando con Spin by OXXO 
+                    </option>
+                    <option value="Poder usar mis puntos Spin PREMIA para recargas de tiempo aire">
+                        Poder usar mis puntos Spin PREMIA para recargas de tiempo aire  
+                    </option>
+                    <option value="Obtener descuentos y promociones en servicios y tiendas (cine, vuelos, streaming, etc.)">
+                        Obtener descuentos y promociones en servicios y tiendas (cine, vuelos, streaming, etc.) 
+                    </option>
+                    <option value="Usar mis puntos para comprar productos en tiendas OXXO">
+                        Usar mis puntos para comprar productos en tiendas OXXO  
+                    </option>
+                    <option value="Otro">
+                        Otro
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionAliadosPremia" style="display: none">
+                <label for="aliadosPremia"
+                    >¿Conoces a nuestros aliados donde puedes usar puntos Spin PREMIA?
+                </label>
+                <select name="aliadosPremia" id="aliadosPremia">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Sí">
+                        Sí
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionMedioAliadosPremia" style="display: none">
+                <label for="medioAliadosPremia"
+                    >¿Cómo los conociste? (elige una opción) 
+                </label>
+                <select name="medioAliadosPremia" id="medioAliadosPremia">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="En la app de Spin by OXXO">
+                        En la app de Spin by OXXO 
+                    </option>
+                    <option value="Por un amigo, familiar y/o conocido">
+                        Por un amigo, familiar y/o conocido 
+                    </option>
+                    <option value="Publicidad">
+                        Publicidad   
+                    </option>
+                    <option value="Por el cajero en la tienda OXXO">
+                        Por el cajero en la tienda OXXO  
+                    </option>
+                    <option value="Redes sociales">
+                        Redes sociales  
+                    </option>
+                    <option value="Otro">
+                        Otro  
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionServicioAtractivo" style="display: none">
+                <label for="servicioAtractivo"
+                    >De la siguiente lista, ¿cuál tienda o servicio se te hace más atractivo? (elige hasta 2 opciones) 
+                </label>
+                <select multiple name="servicioAtractivo" id="servicioAtractivo">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="OXXO GAS">
+                        OXXO GAS 
+                    </option>
+                    <option value="Dona Tota">
+                        Doña Tota 
+                    </option>
+                    <option value="Vix">
+                        Vix    
+                    </option>
+                    <option value="Cinemex">
+                        Cinemex  
+                    </option>
+                    <option value="OXXO Cel">
+                        OXXO Cel   
+                    </option>
+                    <option value="OXXO">
+                        OXXO   
+                    </option>
+                    <option value="Caliente">
+                        Caliente    
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionPosiblesAliados" style="display: none">
+                <label for="posiblesAliados"
+                    >¿Qué otro tipo de negocio te gustaría que fuera aliado del programa? (elige una opción)
+                </label>
+                <select name="posiblesAliados" id="posiblesAliados">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Alimentos y restaurantes">
+                        Alimentos y restaurantes  
+                    </option>
+                    <option value="Tecnología y electrónica">
+                        Tecnología y electrónica 
+                    </option>
+                    <option value="Viajes y alojamiento ">
+                        Viajes y alojamiento     
+                    </option>
+                    <option value="Entretenimiento">
+                        Entretenimiento   
+                    </option>
+                    <option value="Transporte">
+                        Transporte    
+                    </option>
+                    <option value="Servicios digitales">
+                        Servicios digitales    
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionPosiblesAliadosEjemplo" style="display: none">
+                <label for="posiblesAliados"
+                    >Danos un ejemplo de la opción que elegiste previamente.
+                </label>
+                <input type="text" id="posiblesAliadosEjemplo" name="posiblesAliadosEjemplo" required />
+            </div>
+
+            <div id="questionPartePremia" style="display: none">
+                <label for="partePremia"
+                    >¿Te gustaría formar parte del programa de Spin PREMIA? 
+                </label>
+                <select name="partePremia" id="partePremia">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Sí">
+                        Sí
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionPartePremiaNo" style="display: none">
+                <label for="partePremiaNo"
+                    >¿Por qué no te gustaría? (elige una opción)
+                </label>
+                <select name="partePremiaNo" id="partePremiaNo">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="No me interesa">
+                        No me interesa 
+                    </option>
+                    <option value="No entiendo la equivalencia de los puntos a dinero">
+                        No entiendo la equivalencia de los puntos a dinero 
+                    </option>
+                    <option value="No suelo usar esos negocios/servicios">
+                        No suelo usar esos negocios/servicios  
+                    </option>
+                    <option value="No suelo visitar con frecuencia la tienda OXXO">
+                        No suelo visitar con frecuencia la tienda OXXO 
+                    </option>
+                    <option value="Otro">
+                        Otro
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionMotivarPremiaActivo" style="display: none">
+                <label for="motivarPremiaActivo"
+                    >¿Qué deberíamos hacer para motivarte ser parte del programa Spin PREMIA? (elige una opción)
+                </label>
+                <select name="motivarPremiaActivo" id="motivarPremiaActivo">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Mejorar los descuentos en tienda OXXO">
+                        Mejorar los descuentos en tienda OXXO 
+                    </option>
+                    <option value="Cupones en la app Spin by OXXO">
+                        Cupones en la app Spin by OXXO  
+                    </option>
+                    <option value="Productos y descuentos sobre productos">
+                        Productos y descuentos sobre productos  
+                    </option>
+                    <option value="Alianzas con otros negocios y regalos sorpresa">
+                        Alianzas con otros negocios y regalos sorpresa  
+                    </option>
+                    <option value="Cashback">
+                        Cashback 
+                    </option>
+                    <option value="Recompensas en productos o servicios en tienda OXXO/app Spin by OXXO ">
+                        Recompensas en productos o servicios en tienda OXXO/app Spin by OXXO  
+                    </option>
+                    <option value="Otro">
+                        Otro 
+                    </option>
+                </select>
+            </div>
+
+            <div id="questionFaltaPremia" style="display: none">
+                <label for="faltaPremia"
+                    >Qué crees que hace falta para que más personas se unan al programa Spin PREMIA? (elige una opción)
+                </label>
+                <select name="faltaPremia" id="faltaPremia">
+                    <option disabled selected value>
+                        -- Selecciona una opcion --
+                    </option>
+                    <option value="Mayor difusión en redes sociales">
+                        Mayor difusión en redes sociales  
+                    </option>
+                    <option value="Claridad de la mecánica de acumulación y redención de puntos Spin PREMIA">
+                        Claridad de la mecánica de acumulación y redención de puntos Spin PREMIA  
+                    </option>
+                    <option value="Más promociones exclusivas en la tienda OXXO">
+                        Más promociones exclusivas en la tienda OXXO 
+                    </option>
+                    <option value="Recomendación por parte de los cajeros en tienda OXXO">
+                        Recomendación por parte de los cajeros en tienda OXXO  
+                    </option>
+                    <option value="Mejorar las promociones dentro de la aplicación Spin by OXXO">
+                        Mejorar las promociones dentro de la aplicación Spin by OXXO  
+                    </option>
+                    <option value="Otro">
+                        Otro 
+                    </option>
+                </select>
+            </div>
+
+        </form>
+    </body>
+    <script>
+let frecuenciaOxxo = "";
+let montoPromedio = "";
+let acumulaPuntos = "";
+let conoceSpin = "";
+let comoConoceSpin = "";
+let beneficiosSpin = "";
+let posibleMedioSpin = "";
+let mejorFormaAcumularPuntosV = "";
+let mejorFormaRedimirPuntosV = "";
+let motivarPremia = "";
+let conocerAliados = "";
+let comoAliados = "";
+let servicioAtractivo = "";
+let negocio = "";
+let ejemploOtroNegocioV = "";
+let serPremia = "";
+let motivarPremiaActivo = "";
+let faltaPremiaV = "";
+
+
+function submitForm() {
+
+  const data = {
+    frecuenciaOxxo, montoPromedio, acumulaPuntos, conoceSpin, comoConoceSpin, beneficiosSpin, posibleMedioSpin, mejorFormaAcumularPuntosV, mejorFormaRedimirPuntosV, motivarPremia, conocerAliados, comoAliados, servicioAtractivo, negocio, ejemploOtroNegocioV, serPremia, motivarPremiaActivo, faltaPremiaV
+  };
+
+  const API_ENDPOINT = "https://api.amplitude.com/2/httpapi";
+
+  const formattedBody = JSON.stringify({
+    api_key: "",
+    events: [
+      {
+        user_id: `${userId}`,
+        event_type: "mob_test_survey",
+        event_properties: data,
+      },
+    ],
+  });
+  fetch(API_ENDPOINT, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: formattedBody,
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      console.log("API Response:", result);
+      appboyBridge.closeMessage();
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      appboyBridge.closeMessage();
+    });
+}
+
+function frecuenciaVisitaOxxo() {
+  frecuenciaOxxo = document.getElementById("frecuencia").value;
+  document.getElementById("questionFrecuenciaOxxo").style = "display: none";
+  if (frecuenciaOxxo != "No suelo ir al OXXO"){
+    document.getElementById("questionMontoPromedio").style = "";
+  }else {
+    document.getElementById("questionConocerPremia").style = "";
+  }
+}
+
+function montoPromedioCompra() {
+  montoPromedio = document.getElementById("monto").value;
+  document.getElementById("questionMontoPromedio").style = "display: none";
+  document.getElementById("questionCajero").style = "";
+}
+
+function acumularPuntosCajero(){
+  acumulaPuntos = document.getElementById("acumularPuntos").value;
+  document.getElementById("questionCajero").style = "display: none";
+  document.getElementById("questionConocerPremia").style = "";
+}
+
+function conocerSpinPremia(){
+  conoceSpin = document.getElementById("conocesPremia").value;
+  document.getElementById("questionConocerPremia").style = "display: none";
+  if (conoceSpin == "Sí"){
+    document.getElementById("questionComoConocesPremia").style = "";
+  }else {
+    document.getElementById("questionMediosPremia").style = "";
+  }
+}
+
+function comoConocesSpinPremia(){
+  comoConoceSpin = document.getElementById("comoConocesPremia").value;
+  document.getElementById("questionComoConocesPremia").style = "display: none";
+  document.getElementById("questionBeneficiosPremia").style = "";
+}
+
+function beneficiosSpinPremia(){
+  temp = document.getElementById("beneficiosPremia").selectedOptions;
+  var values = Array.from(temp).map(({ value }) => value);
+  beneficiosSpin = values
+  selectOnlyCertainNumberOptions("beneficiosPremia",3, "questionBeneficiosPremia", "questionFormaAcumularPuntos");
+}
+
+function probableMedioSpin(){
+  posibleMedioSpin = document.getElementById("mediosPremia").value;
+  document.getElementById("questionMediosPremia").style = "display: none";
+  document.getElementById("questionFormaAcumularPuntos").style = "";
+}
+
+function mejorFormaAcumularPuntos(){
+  mejorFormaAcumularPuntosV = document.getElementById("formaAcumularPuntos").value;
+  document.getElementById("questionFormaAcumularPuntos").style = "display: none";
+  document.getElementById("questionFormaRedimirPuntos").style = "";
+}
+
+function mejorFormaRedimirPuntos(){
+  mejorFormaRedimirPuntosV = document.getElementById("formaRedimirPuntos").value;
+  document.getElementById("questionFormaRedimirPuntos").style = "display: none";
+  document.getElementById("questionMotivarPremia").style = "";
+}
+
+function motivarUsarPremia(){
+  motivarPremia = document.getElementById("motivarPremia").value;
+  document.getElementById("questionMotivarPremia").style = "display: none";
+  document.getElementById("questionAliadosPremia").style = "";
+}
+
+function conocesAliados(){
+  conocerAliados = document.getElementById("aliadosPremia").value;
+  document.getElementById("questionAliadosPremia").style = "display: none";
+  if (conocerAliados == "Sí"){
+    document.getElementById("questionMedioAliadosPremia").style = "";
+  } else{
+    document.getElementById("questionServicioAtractivo").style = "";
+  }
+}
+
+function comoConocerAliados(){
+  comoAliados = document.getElementById("medioAliadosPremia").value;
+  document.getElementById("questionMedioAliadosPremia").style = "display: none";
+  document.getElementById("questionServicioAtractivo").style = "";
+}
+
+function servicioMasAtractivo(){
+  temp = document.getElementById("servicioAtractivo").selectedOptions;
+  var values = Array.from(temp).map(({ value }) => value);
+  servicioAtractivo = values
+  selectOnlyCertainNumberOptions("servicioAtractivo",3, "questionServicioAtractivo", "questionPosiblesAliados");
+}
+
+function otroNegocio(){
+  negocio = document.getElementById("posiblesAliados").value;
+  document.getElementById("questionPosiblesAliados").style = "display: none";
+  document.getElementById("questionPosiblesAliadosEjemplo").style = "";
+}
+
+function ejemploOtroNegocio(){
+  ejemploOtroNegocioV = document.getElementById("posiblesAliadosEjemplo").value;
+  document.getElementById("questionPosiblesAliadosEjemplo").style = "display: none";
+  document.getElementById("questionPartePremia").style = "";
+}
+
+function serPartePremia(){
+  serPremia = document.getElementById("partePremia").value;
+  document.getElementById("questionPartePremia").style = "display: none";
+  if (serPremia == "Sí"){
+    document.getElementById("questionMotivarPremiaActivo").style = "";
+  } else{
+    // MANDAR CUESTIONARIO Y CERRAR
+    submitForm()
+  }
+}
+
+function motivarSerPremiaActivo(){
+  motivarPremiaActivo = document.getElementById("motivarPremiaActivo").value;
+  document.getElementById("questionMotivarPremiaActivo").style = "display: none";
+  document.getElementById("questionFaltaPremia").style = "";
+}
+
+function faltaPremia(){
+  faltaPremiaV = document.getElementById("faltaPremia").value;
+  // Cerrar y mandar encuesta
+  submitForm()
+}
+
+function selectOnlyCertainNumberOptions(question, limit, removePage, changePage){
+  var selectChoose = document.getElementById(question);
+  var maxOptions = limit;
+  var optionCount = 0;
+  for (var i = 0; i < selectChoose.length; i++) {
+      if (selectChoose[i].selected) {
+          optionCount++;
+          if (optionCount == maxOptions) {
+            document.getElementById(removePage).style = "display: none";
+            document.getElementById(changePage).style = "";
+          }
+      }
+  }
+}
+
+document.getElementById("frecuencia").addEventListener("change", frecuenciaVisitaOxxo);
+document.getElementById("monto").addEventListener("change", montoPromedioCompra);
+document.getElementById("acumularPuntos").addEventListener("change", acumularPuntosCajero);
+document.getElementById("conocesPremia").addEventListener("change", conocerSpinPremia);
+document.getElementById("comoConocesPremia").addEventListener("change", comoConocesSpinPremia);
+document.getElementById("mediosPremia").addEventListener("change", probableMedioSpin);
+document.getElementById("formaAcumularPuntos").addEventListener("change", mejorFormaAcumularPuntos);
+document.getElementById("formaRedimirPuntos").addEventListener("change", mejorFormaRedimirPuntos);
+document.getElementById("motivarPremia").addEventListener("change", motivarUsarPremia);
+document.getElementById("aliadosPremia").addEventListener("change", conocesAliados);
+document.getElementById("medioAliadosPremia").addEventListener("change", comoConocerAliados);
+document.getElementById("servicioAtractivo").addEventListener("change", servicioMasAtractivo);
+document.getElementById("posiblesAliados").addEventListener("change", otroNegocio);
+document.getElementById("posiblesAliadosEjemplo").addEventListener("change", ejemploOtroNegocio);
+document.getElementById("partePremia").addEventListener("change", serPartePremia);
+document.getElementById("motivarPremiaActivo").addEventListener("change", motivarSerPremiaActivo);
+document.getElementById("faltaPremia").addEventListener("change", faltaPremia);
+document.getElementById("beneficiosPremia").addEventListener("change", beneficiosSpinPremia);
+    </script>
+</html>
